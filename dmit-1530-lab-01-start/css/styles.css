@@ -12,3 +12,158 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+/* General styles */
+body {
+    font-family: 'Halant', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    color: #405B5B;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Oswald' , serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+header p {
+    text-align: center;
+}
+header p:first-of-type {
+    font-size: 1rem;
+    font-family: 'Oswald' , serif;
+}
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+   
+}
+
+h2 {
+    color: #405B5B;
+    font-family: 'Oswald' , serif;
+}
+h3 {
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+    color: #666;
+}
+
+a {
+    color: #405B5B;
+    font-family: 'Oswald', serif;
+    padding: 10px;
+    border: 1px solid #405B5B;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.image-container img {
+    max-width: 49%; /* Each image takes up almost half of the container */
+    height: auto;
+}
+
+footer {
+    background-color:  #182222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+footer h4 {
+    font-family: 'Oswald' , serif;
+}
+footer p {
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+/* Large screen styles (above 1024px) */
+@media (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+
+    .body {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    .jasper {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .jasper h3 {
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+}
+
+/* Small screen styles (up to 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    a {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .image-container {
+        margin: 40px auto;
+    }
+    footer {
+        margin-top: 20px;
+    }
+}
